@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="700.0" maxWidth="650.0" minHeight="700.0" minWidth="650.0" prefHeight="700.0" prefWidth="650.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.turingmachine.Main">
+   <children>
+      <ImageView fitHeight="742.0" fitWidth="690.0" layoutX="-34.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vBox" layoutX="21.0" layoutY="13.0" maxHeight="700.0" maxWidth="650.0" minHeight="700.0" minWidth="650.0" prefHeight="700.0" prefWidth="650.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="783.0" spacing="95.0">
+               <children>
+                  <Label fx:id="qLBL" text="Q:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="qTXF" alignment="TOP_LEFT" maxHeight="45.0" maxWidth="250.0" minHeight="45.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="220.0" spacing="100.0">
+               <children>
+                  <Label fx:id="sigmaLBL" text="Σ:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="sigmaTXF" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="220.0" spacing="100.0">
+               <children>
+                  <Label fx:id="gamaLBL" text="Γ:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="gamaTXF" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="220.0" spacing="100.0">
+               <children>
+                  <Label fx:id="fLBL" text="F:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="fTXF" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="44.0" prefWidth="539.0" spacing="100.0">
+               <children>
+                  <Label fx:id="thetaLBL" text="δ:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextArea fx:id="thetaTXF" maxHeight="40.0" maxWidth="250.0" minHeight="20.0" minWidth="250.0" prefHeight="20.0" prefWidth="250.0" style="-fx-background-insets: 5;" stylesheets="@Style.css" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextArea>
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#add" text="add">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="transitionsScroll" fitToWidth="true" hbarPolicy="NEVER" layoutX="80.0" maxWidth="400.0" minWidth="400.0" prefHeight="191.0" prefWidth="400.0" translateX="110.0" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="transitionsVBox" layoutX="100.0" />
+               </content>
+            </ScrollPane>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0">
+               <children>
+                  <Label fx:id="inputLBL" text="Input string: ">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding></Label>
+                  <TextField fx:id="inputTXF" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin></TextField>
+                  <Button fx:id="go" mnemonicParsing="false" onAction="#go" text="Go!">
+                     <HBox.margin>
+                        <Insets left="60.0" top="25.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

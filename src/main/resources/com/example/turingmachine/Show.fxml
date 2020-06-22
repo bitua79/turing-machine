@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="700.0" maxWidth="650.0" minHeight="700.0" minWidth="650.0" prefHeight="700.0" prefWidth="650.0" stylesheets="@Source/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Show">
+   <children>
+      <ImageView fitHeight="743.0" fitWidth="681.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Source/Picture1.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollPane" hmin="100.0" layoutX="50.0" layoutY="50.0" pannable="true" prefHeight="574.0" prefWidth="550.0" vbarPolicy="ALWAYS" vmax="100.0">
+         <content>
+            <VBox fx:id="vBox" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
