@@ -170,7 +170,6 @@ public class Main extends Application implements Initializable {
         Machine machine = new Machine(Q, Σ, Γ, F, δ, inputTXF.getText());
         try {
             machine.run(inputTXF.getText());
-            machine.run("aabbcc");
 
         } catch (HaltException e) {
             e.printStackTrace();
