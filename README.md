@@ -65,9 +65,9 @@ aabbcc
 
 ## Screenshots
 <p align="center">
-   <img src="screenshots/input.png" alt="Input Screenshot" width="400"/>
-   <img src="screenshots/input added.png" alt="Input Added Screenshot" width="400"/>
-   <img src="screenshots/output.png" alt="Output Screenshot" width="400"/>
+   <img src="screenshots/input.png" alt="Input Screenshot" width="300"/>
+   <img src="screenshots/input added.png" alt="Input Added Screenshot" width="300"/>
+   <img src="screenshots/output.png" alt="Output Screenshot" width="300"/>
 </p>
 
 ## How to Use
