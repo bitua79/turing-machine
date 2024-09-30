@@ -1,7 +1,7 @@
 # Turing Machine Simulator (JavaFX Project)
 
 ## About
-This project implements a Turing machine simulator using JavaFX. It allows users to define a Turing machine with specific states and transitions, and visualize the process of accepting or rejecting input strings. This project was developed as the final project for the **Finite Languages and Automata** course, under the supervision of **Dr. Saeid Abrishami** [Webpage](https://profsite.um.ac.ir/~s-abrishami/).
+This project implements a Turing machine simulator using JavaFX. It allows users to define a Turing machine with specific states and transitions, and visualize the process of accepting or rejecting input strings. This project was developed as the final project for the **Finite Languages and Automata** course, under the supervision of **Professor Saeid Abrishami** ([Webpage](https://profsite.um.ac.ir/~s-abrishami/)).
 
 ## Features
 - **Graphical User Interface**: A user-friendly GUI built with JavaFX for interacting with the Turing machine.
